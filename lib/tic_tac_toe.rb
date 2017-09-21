@@ -44,7 +44,7 @@ def position_taken?(board, location)
 end
 
 def taken?(value)
-  location != " " && location != ""
+  value != " " && value != ""
 end
 
 def valid_move?(board, index)
