@@ -43,6 +43,10 @@ def position_taken?(board, location)
   board[location] != " " && board[location] != ""
 end
 
+def taken?(value)
+  location != " " && location != ""
+end
+
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
@@ -50,7 +54,7 @@ end
 def turn_count(board)
   count = 0
   board.each do |location|
-    if position_taken?(board, location)
+    if position_taken?(location)
       count += 1
     end
   end
