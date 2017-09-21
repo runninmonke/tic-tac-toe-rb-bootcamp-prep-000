@@ -70,7 +70,7 @@ def play(board)
   else
     puts "Game is a draw."
   end
-  
+
 end
 
 def won?(board)
